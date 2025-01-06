@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Study</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="navbar">
+            <div class="logo"></div>
+            <ul class="list" >
+                <a href="index.html" ><li class="home" >Home</li></a>
+                <a href="about.html" ><li class="about">About</li></a>
+                <a href="contact.html" ><li class="contact">Contact</li></a>
+            </ul>
+        </div>
+    </header>   
+    <div class="info_text">
+        <h1>All Ai Tools For Study Purpose At One Place!</h1>
+        <div class="line"></div>
+    </div> 
+    <h4 class="info_text1">Select your Course from below list &#8595;</h4>
+    <div class="dropdown-container">
+        <select name="course" class="dropdown" onchange="redirectToPage(this.value)">
+            <option value="" disabled selected>Select Course</option>
+            <option value="cs.html">Computer Programming</option>
+            <option value="science.html">Science and Research</option>
+            <option value="english.html">English and Language Learning</option>
+            <option value="business.html">Business and Economics</option>
+            <option value="art.html">Art and Design</option>
+            <option value="testprep.html">Test Preparation and Competitive Exams</option>
+        </select>
+    </div>
+    <h1 class="tools">Some Trendy AI Tools ⬇️</h1>
+    <div class="trendy">
+        <a href="https://chatgpt.com/" style="text-decoration: none;">
+            <div class="trendytools" style="background-image: url(chatgpt.png);"></div>
+        </a>
+        <a href="https://www.grammarly.com/" style="text-decoration: none;">
+            <div class="trendytools" style="background-image: url(gramerly.png);"></div>
+        </a>
+            
+        <a href="https://www.notion.so/product/ai" style="text-decoration: none;">
+            <div class="trendytools" style="background-image: url(notion.png);"></div>
+        </a>
+        <a href="https://quizlet.com/in" style="text-decoration: none;">
+            <div class="trendytools" style="background-image: url(quizlet.png);"></div>
+        </a>
+        <a href="https://www.khanacademy.org/" style="text-decoration: none;">
+            <div class="trendytools" style="background-image: url(khanacademy.png);"></div>
+        </a>
+    </div>
+    <footer >
+        <div class="foot-panel1"> 
+            <div class="foot_logo"></div>
+            <br>
+            <p class="foot_text">Study Smarter with AI-Powered Tools.<br> Discover tools that adapt to your needs and help you succeed❗</p>
+            <ul class="foot-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About </li></a>
+                <a href="contact.html" ><li>Contatct</li></a>
+            </ul>
+        </div>
+        <div class="rights">©2025 NexGen Study All Rights Reserved</div>
+    </footer>
+    <script>
+        function redirectToPage(url) {
+            if (url) {
+                window.location.href = url;
+            }
+        }
+        </script>
+</body>
+</html>
